@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lotto Lucky Numbers </title>
+    <link rel="icon" href="Favicon_lotto.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Days+One&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="home-page">
+            <h2>WELCOME TO YOUR FINANCIAL DREAMS.</h2>
+            <h2>The Lottery</h2>
+            <img src="../assets/Lotto.jpg" alt="Lotto Image">
+
+            <div class="three-buttons">
+                <button class="upload-btn" onclick="document.getElementById('fileUpload').onclick()">Upload CVS</button>
+                <label for="file" id="fileUpload" accept = ".csv" style="display: none;"></label>
+
+                <button>Generate Quick Picks</button>
+                <a href="History.html">
+                    <button>Historical Predictions</button>
+                </a>
+            </div>
+
+            <div class="results-box">
+                <h2>Your lucky numbers are:</h2>
+                <div class="results">
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="App.js"></script>
+</body>
+</html>

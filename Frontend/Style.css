@@ -1,0 +1,181 @@
+body{
+     background: #167177;
+}
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    padding: 50px;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 20px;
+}
+
+.home-page{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 850px;
+    height: 800px;
+    padding: 20px;
+    background-color: #0CA0AA;
+    border-radius: 15px;
+    backdrop-filter: blur(25px);
+    box-shadow: 15px 15px 15px 15px rgba(0, 0, 0, 0.2); /*get allround box shadow*/
+}
+
+h2{
+    color: #fff;
+    font-size: 1.5em;
+    font-family: "Days One", sans-serif;
+    font-weight: 400;
+    text-shadow: 0 7px 4px rgba(0, 0, 0, 0.259);
+}
+img{
+    height: 300px;
+    width: 450px;
+    border-radius: 10px;
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+.three-buttons{
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    justify-content: space-around;
+    display: flex;
+}
+.three-buttons button{
+    font-family: "Days One", sans-serif;
+    font-size: 0.8em;
+    width: 180px;
+    height: 35px;
+    border-radius: 8.5px;
+    background: #95EDDB;
+    border: none;
+    box-shadow: inset 0 1px 0 2px rgba(157, 193, 178, 0.262);
+    padding: 5px;
+    margin-top: 50px;
+    box-shadow: inset 10 4px 8px rgba(0, 0, 0, 0.15),
+    inset 0 -40px 8px rgba(255, 255, 255, 0.15);
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.upload-btn{
+    font-family: "Days One", sans-serif;
+    font-size: 0.8em;
+    width: 180px;
+    height: 35px;
+    border-radius: 8.5px;
+    background: #95EDDB;
+    border: none;
+    box-shadow: inset 0 1px 0 2px rgba(157, 193, 178, 0.262);
+    padding: 5px;
+    margin-top: 50px;
+    box-shadow: inset 10 4px 8px rgba(0, 0, 0, 0.15),
+    inset 0 -40px 8px rgba(255, 255, 255, 0.15);
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.results-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding-top: 10px;
+}
+
+.results{
+    width: 350px;
+    height: 35px;
+    border-radius: 8.5px;
+    background: #95EDDB;
+    border: none;
+    box-shadow: inset 0 1px 0 2px rgba(157, 193, 178, 0.262);;
+    margin-top: 20px;
+    box-shadow: inset 10 4px 8px rgba(0, 0, 0, 0.15),
+    inset 0 -40px 8px rgba(255, 255, 255, 0.15);
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.history-page {
+    display: flex;
+    flex-direction: column; /* Vertical layout */
+    align-items: center;
+    width: 850px;
+    height: auto;
+    padding: 20px;
+    background-color: #0CA0AA;
+    border-radius: 15px;
+    backdrop-filter: blur(25px);
+    box-shadow: 15px 15px 15px 15px rgba(0, 0, 0, 0.2);
+}
+
+.history-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.history-header h2 {
+    color: #fff;
+    margin: 10px 0;
+}
+
+.history-content {
+    display: flex;
+    flex-direction: row; /* Image and text side-by-side */
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.history-image {
+    width: 300px;
+    height: 350px;
+    object-fit: cover;
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.2);
+}
+
+.history-results {
+    background-color: #fff;
+    width: 250px;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.history-results p {
+    font-family: 'Days One', sans-serif;
+    font-size: small;
+    margin-bottom: 200px;
+}
+
+.history-button {
+    margin-top: 20px;
+}
+
+.history-button button {
+    font-family: "Days One", sans-serif;
+    font-size: 0.8em;
+    width: 180px;
+    height: 35px;
+    border-radius: 8.5px;
+    background: #95EDDB;
+    border: none;
+    box-shadow: inset 0 1px 0 2px rgba(157, 193, 178, 0.262);
+    padding: 5px;
+    margin-top: 10px;
+    box-shadow: inset 10 4px 8px rgba(0, 0, 0, 0.15),
+    inset 0 -40px 8px rgba(255, 255, 255, 0.15);
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
