@@ -1,0 +1,46 @@
+
+Lotto project predictor
+
+1. How would this project work or flow? I've also done my own features but can advise best way to achieve this project.
+2. What will I learn and best tools to use, is this intermediate project?
+3. Features of project: 
+	- retrieve past/historical data from Ithuba or valid source.
+	- Once retrieved we load and clean the data using. Using python's built in csv or pandas. 
+	- Store the drawn numbers for analysis
+			- Now we analyze the patterns and draw numbers at random.
+			- Count how often each number appears (frequent analysis)
+			- Determine the "hot" (most frequent), "mild" (occasional/periodically) ( and "cold" (least frequent)
+			- Track pair/triples that appear together often
+	- Generate the predicitions:
+			- From the hot and cold numbers drawn the most drawn "hot" or predicted numbers
+			
+	- Output optionally from two factors, for visual it's the front end or pritnting the results in the console.
+	
+	
+	FLOW OF PROJECT
+	
+	Is the analysis logic (step 3) and predicition logic (step 4) two seperate. 
+	For example in my script am I going to have teh below list of functions
+	
+-	dataProcessing function
+-	analyzePatterns function
+-	generatePredictions
+-	results function
+
+phase 1: 
+- Setup github and readme, get dataset and start developing frontend.
+
+phase 2:
+Coding part
+wait for q2 and q3 what's the difference with and without pandas for data processing?
+-	
+
+Python script includes below functions:
+-	dataProcessing function
+-	analyzePatterns function
+-	generatePredictions
+-	results function
+
+
+Just Finished troubleshooting "Upload csv button" it triggers dialog button.
+Start phase 2, backend.

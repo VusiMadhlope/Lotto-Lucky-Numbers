@@ -20,8 +20,9 @@
             <img src="../assets/Lotto.jpg" alt="Lotto Image">
 
             <div class="three-buttons">
-                <button class="upload-btn" onclick="document.getElementById('fileUpload').onclick()">Upload CVS</button>
-                <label for="file" id="fileUpload" accept = ".csv" style="display: none;"></label>
+                <!--Hidden input-->
+                <input type="file" id="fileUpload" style="display: none;">
+                <button class="upload-btn" onclick="FileUploadButton()">Upload CVS</button>
 
                 <button>Generate Quick Picks</button>
                 <a href="History.html">
@@ -31,14 +32,14 @@
 
             <div class="results-box">
                 <h2>Your lucky numbers are:</h2>
-                <div class="results">
+                <div id="results">
+                    <!-- Results will be displayed here -->
 
                 </div>
             </div>
 
         </div>
     </div>
-
-    <script src="App.js"></script>
+    <script src="app.js"></script>
 </body>
 </html>
