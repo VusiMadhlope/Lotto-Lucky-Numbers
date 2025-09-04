@@ -4,20 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lotto Lucky Numbers </title>
-    <link rel="icon" href="Favicon_lotto.png" type="image/png">
+    <link rel="icon" href="{{url_for('static', filename='Favicon_lotto.png') }}" type="image/png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Days+One&display=swap" rel="stylesheet">
 
 
-    <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="{{url_for('static', filename='Style.css') }}">
 </head>
 <body>
     <div class="wrapper">
         <div class="home-page">
             <h2>WELCOME TO YOUR FINANCIAL DREAMS.</h2>
             <h2>The Lottery</h2>
-            <img src="../assets/Lotto.jpg" alt="Lotto Image">
+            <img src="../static/Lotto.jpg" alt="Lotto Image">
 
             <div class="three-buttons">
                 <!--Hidden input-->
@@ -25,7 +25,7 @@
                 <button class="upload-btn" onclick="FileUploadButton()">Upload CVS</button>
 
                 <button>Generate Quick Picks</button>
-                <a href="History.html">
+                <a href="{{url_for('history') }}">
                     <button>Historical Predictions</button>
                 </a>
             </div>
@@ -40,6 +40,6 @@
 
         </div>
     </div>
-    <script src="app.js"></script>
+    <script src="{{url_for('static', filename='app.js') }}"></script>
 </body>
 </html>
