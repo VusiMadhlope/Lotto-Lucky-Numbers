@@ -14,3 +14,21 @@ document.getElementById("fileUpload").addEventListener("change", function(event)
   }
 });
 
+
+// Quick Pick: Board and draws Increment and Decrement buttons
+const plus = document.getQuerySelector(".plus"),
+minus = document.querySelector(".minus"),
+num = document.querySelector(".num");
+let a = 1;
+plus.addEventListener("click", ()=>{
+    a++;
+    a = (a < 6) ? a : a;
+    num.innerText = a;
+});
+
+minus.addEventListener("click", ()=>{
+  if(a > 1){
+    a--;
+    num.innerText = a;
+  }
+});
