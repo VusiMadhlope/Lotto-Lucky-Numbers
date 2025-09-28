@@ -21,17 +21,41 @@
             <h2>WELCOME TO YOUR FINANCIAL DREAMS</h2>
             <h2>The Lottery</h2>
             <img src="../static/Lotto.jpg" alt="">
-
                 <div class="quick-pick-content">
-                    <span class="minus">-</span>
-                    <span class="num">01</span>
-                    <span class="plus">+</span>
-                    <br>
-                    <span class="minus">-</span>
-                    <span class="num">01</span>
-                    <span class="plus">+</span>
+                    
+                    <div class="quick-pick-boards">
+                        <h3>Numbers per board: </h3>
+                        <span class="minus" id="boards-minus">-</span>
+                        <span class="num" id="boards-num">1</span>
+                        <span class="plus" id="boards-plus">+</span>
+                    </div>
+
+                    <div class="quick-pick-draws">
+                        <h3>Number of draws: </h3>
+                        <span class="minus" id="draws-minus">-</span>
+                        <span class="num" id="draws-num">1</span>
+                        <span class="plus" id="draws-plus">+</span>
+                    </div>
                 </div>
-        </div>  
+
+                <div class="generate-button">
+                    <button>generate</button>
+                </div>
+
+                <div class="results-box">
+                <h2>Your lucky numbers are:</h2>
+                <div id="results">
+                    <!-- Results will be displayed here -->
+
+                </div>
+
+                <div class="back-button">
+                    <a href="../templates/index.html">
+                    <button>Return</button>
+                </a>
+                </div>
+        </div>
+        </div>
     </div>
     <!--
     <script src="{{url_for('static', filename='app.js') }}"></script>

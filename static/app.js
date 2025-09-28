@@ -16,19 +16,30 @@ document.getElementById("fileUpload").addEventListener("change", function(event)
 
 
 // Quick Pick: Board and draws Increment and Decrement buttons
-const plus = document.getQuerySelector(".plus"),
-minus = document.querySelector(".minus"),
-num = document.querySelector(".num");
-let a = 1;
-plus.addEventListener("click", ()=>{
-    a++;
-    a = (a < 6) ? a : a;
-    num.innerText = a;
+// for the boards
+let boardsCount = 1;
+const boardsNum = document.getElementById("boards-num");
+document.getElementById("boards-plus").addEventListener("click", () => {
+  if (boardsCount < 5) boardsCount++;
+  boardsNum.innerText = boardsCount;
+  console.log("boards count: ", boardsCount)
+});
+document.getElementById("boards-minus").addEventListener("click", () => {
+  if (boardsCount > 1) boardsCount--;
+  boardsNum.innerText = boardsCount;
 });
 
-minus.addEventListener("click", ()=>{
-  if(a > 1){
-    a--;
-    num.innerText = a;
-  }
+// for the draws
+let drawsCount = 1;
+const drawsNum = document.getElementById("draws-num");
+document.getElementById("draws-plus").addEventListener("click", () => {
+  if (drawsCount < 5) drawsCount++;
+  drawsNum.innerText = drawsCount;
+  console.log("draws count: ", drawsCount)
 });
+document.getElementById("draws-minus").addEventListener("click", () => {
+  if (drawsCount > 1) drawsCount--;
+  drawsNum.innerText = drawsCount;
+});
+
+
