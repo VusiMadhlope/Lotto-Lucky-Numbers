@@ -4,6 +4,9 @@
 lotto_numbers = list(range(1, 50))
 numbers_per_boards = 5  # Example range for lottery numbers
 
+app = Flask(__name__)
+
+
 
 # Boards and Draws validation
 def number_of_boards(boards_per_play = 1):
