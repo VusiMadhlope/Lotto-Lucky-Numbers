@@ -10,10 +10,9 @@
 <link href="https://fonts.googleapis.com/css2?family=Days+One&display=swap" rel="stylesheet">
 
 
-<link rel="stylesheet" href="../static/Style.css">
-<!--    
+<!-- <link rel="stylesheet" href="../static/Style.css"> -->
+
 <link rel="stylesheet" href="{{url_for('static', filename='Style.css') }}">
--->
 </head>
 <body>
     <div class="wrapper">
@@ -50,16 +49,15 @@
                 </div>
 
                 <div class="back-button">
-                    <a href="../templates/index.html">
+                    <a href="{{url_for('home') }}">
                     <button>Return</button>
                 </a>
                 </div>
         </div>
         </div>
     </div>
-    <!--
+    
     <script src="{{url_for('static', filename='app.js') }}"></script>
-    -->
-    <script src="../static/app.js"></script>
+    <!-- <script src="../static/app.js"></script> -->
 </body>
 </html>

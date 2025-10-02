@@ -24,8 +24,11 @@
                 <input type="file" id="fileUpload" style="display: none;">
                 <button class="upload-btn" onclick="FileUploadButton()">Upload CVS</button>
 
-                <button>Generate Quick Picks</button>
-                <a href="{{url_for('history') }}">
+                <a href="{{url_for('quick_pick_page') }}">
+                    <button>Generate Quick Picks</button>
+                </a>
+
+                <a href="{{url_for('history_page') }}">
                     <button>Historical Predictions</button>
                 </a>
             </div>
